@@ -1,0 +1,132 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{1261A0}
+
+\definecolor{awesome}{HTML}{1261A0}
+
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\name{Mark}{Zurbruegg}
+\position{PhD Student{\enskip\cdotp\enskip}Biotechnology{\enskip\cdotp\enskip}Neuroscience}
+\address{17/7 Hawkhill, Edinburgh, EH7 6LA, UK}
+
+\mobile{(+44) 74-7741-3570}
+\email{m.zurbruegg1990@gmail.com}
+\github{Betaglutamate}
+\linkedin{mzurbruegg}
+\homepage {betaglutamate.github.io/online-cv/}
+
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Merck Innovation Cup}
+  {Merck KGaA\\Frankfurter Str. 250\\64293 Darmstadt, Germany}
+  
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application Merck Innovation Cup}
+% How the letter is opened
+\letteropening{Dear selection committee,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Mark Zurbruegg~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+
+
+Dear hiring manager,
+
+I am writing to apply for the position of Data Engineer at Paramount. I am a highly curious and motivated individual with 2+ years of working experience with Python. I have demonstrated ability to import, clean, transform, and aggregate data with the purpose of translating large data sources into meaningful datasets for decision making purposes. I am also familiar with data transfer methods/protocols such as APIs, feeds, S3, S/FTP, Google Cloud Storage, querying data out of data warehouses, snowflake, etc. In addition, I have some knowledge of AWS or GCP.
+
+I would be a great fit for this position as I am able to develop and support new ingestion pipelines and expand upon existing processes to pull in new metrics/data needs based on business requirements. I am also able to troubleshoot failures, data delays, and data anomalies to ensure data accuracy. Furthermore, I am skilled in monitoring jobs and finding opportunities for efficiency in scheduling, dependencies, and functionality.
+
+If you are interested in my qualifications and skills, please do not hesitate to contact me at [PHONE NUMBER] or [EMAIL ADDRESS]. Thank you for your time and consideration.
+
+Sincerely,
+[YOUR NAME]
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
