@@ -35,3 +35,5 @@ for k,v in job_data.items():
   job_letters[k] = written_application.replace('[Your name]', 'Mark Zurbruegg')
 
   generate_letter(job_letters[k], k)
+
+  

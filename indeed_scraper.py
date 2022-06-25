@@ -4,6 +4,7 @@ import pandas as pd
 import time
 
 def get_job_data(job_keywords, location):
+    '''This function gets indeed data and returns the listing text'''
 
     headers = {
         "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0"
@@ -18,9 +19,10 @@ def get_job_data(job_keywords, location):
 
     soup = BeautifulSoup(requests.get(url, headers=headers).content, "html.parser")
 
+
     job_listing = {}
 
-    for job in soup.select('a[id^="job_"]')[0:2]:
+    for job in soup.select('a[id^="job_"]')[0:5]:
         job_id = job["id"].split("_")[-1]
         s = BeautifulSoup(
             requests.get(api_url.format(job_id=job_id), headers=headers).content,
